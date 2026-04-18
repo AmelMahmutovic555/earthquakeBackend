@@ -15,7 +15,8 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:3000",
-                                "https://earthquake-frontend-production-nrlqyhv7h.vercel.app/"
+                                "https://earthquake-frontend-production-nrlqyhv7h.vercel.app/",
+                                "https://earthquake-frontend-production.vercel.app/"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
                         .allowedHeaders("*")
