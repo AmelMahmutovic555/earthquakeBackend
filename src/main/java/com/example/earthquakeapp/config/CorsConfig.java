@@ -14,9 +14,8 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
-                                "http://localhost:3000",  // React
-                                "http://localhost:5173",  // Vite
-                                "http://localhost:4200"   // Angular
+                                "http://localhost:3000",
+                                "https://earthquake-frontend-production-nrlqyhv7h.vercel.app/"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
                         .allowedHeaders("*")
